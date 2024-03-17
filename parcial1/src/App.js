@@ -7,8 +7,6 @@ import React, { useEffect, useState } from 'react';
 import Perfil from './components/components/Perfil';
 import Header from './components/components/Header';
 import Home from './components/components/Home';
-  
-  // Importa el componente Header
 
 function App() {
   const [userData, setUserData] = useState(null); // Mueve el estado userData al componente principal
@@ -19,11 +17,11 @@ function App() {
     .then(response => response.json())
     .then(data => setDatos(data));
 
-    // También puedes cargar los datos del usuario aquí
+
     fetch('https://raw.githubusercontent.com/JuanSe2003/rrrrrrrrrrrrr/main/DatosUsuario.json')
         .then(response => response.json())
         .then(data => {
-            // Actualizar el estado con los datos del usuario
+
             setUserData(data[0]);
         })
         .catch(error => {
@@ -35,7 +33,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          {/* Pasa userData y editable como props a Perfil */}
           <Route path="/user" element={<Perfil userData={userData} editable={editable} />} />
           <Route path="/Home" element={<Home datosunicos={datos} editable={editable} />} />
           <Route path="/" element={<Home datosunicos={datos} editable={editable} />} />

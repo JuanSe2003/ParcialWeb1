@@ -1,16 +1,16 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl'; // Importa FormattedMessage
-import './Perfil.css'; // Importa el archivo CSS para los estilos del perfil
+import { FormattedMessage } from 'react-intl'; 
+import './Perfil.css';
 
 function Perfil({ userData, editable }) {
     if (!userData) {
-        return null; // Si no hay datos del usuario, no se renderiza nada
+        return null; 
     }
 
     if (!editable) {
         return (
             <div className="perfil-container">
-                <h2><FormattedMessage id="titulo" /></h2> {/* Utiliza internacionalización para el título */}
+                <h2><FormattedMessage id="titulo" /></h2> 
                 <br />
                 <div className="perfil-info">
                     <img
@@ -19,11 +19,11 @@ function Perfil({ userData, editable }) {
                         alt={`${userData.first_name} ${userData.last_name}`}
                     />
                     <div className="user-details">
-                        <p><FormattedMessage id="nombre" />: {userData.first_name}</p> {/* Utiliza internacionalización para el nombre */}
-                        <p><FormattedMessage id="apellido" />: {userData.last_name}</p> {/* Utiliza internacionalización para el apellido */}
-                        <p><FormattedMessage id="cantidad_seguidores" />: {userData.cantidad_seg}</p> {/* Utiliza internacionalización para la cantidad de seguidores */}
-                        <p><FormattedMessage id="cantidad_post" />: {userData.cantidad_post}</p> {/* Utiliza internacionalización para la cantidad de posts */}
-                        <p><FormattedMessage id="descripcion" />: {userData.descripción}</p> {/* Utiliza internacionalización para la descripción */}
+                        <p><FormattedMessage id="nombre" />: {userData.first_name}</p> 
+                        <p><FormattedMessage id="apellido" />: {userData.last_name}</p> 
+                        <p><FormattedMessage id="cantidad_seguidores" />: {userData.cantidad_seg}</p> 
+                        <p><FormattedMessage id="cantidad_post" />: {userData.cantidad_post}</p> 
+                        <p><FormattedMessage id="descripcion" />: {userData.descripción}</p> 
                     </div>
                 </div>
             </div>
@@ -32,14 +32,14 @@ function Perfil({ userData, editable }) {
 
     const inputFields = Object.entries(userData).map(([key, value]) => (
         <div key={key}>
-            <label><FormattedMessage id={key} />: </label> {/* Utiliza internacionalización para las etiquetas */}
+            <label><FormattedMessage id={key} />: </label> 
             <input type="text" name={key} value={value} />
         </div>
     ));
 
     return (
         <div className="perfil-container">
-            <h2><FormattedMessage id="titulo" /></h2> {/* Utiliza internacionalización para el título */}
+            <h2><FormattedMessage id="titulo" /></h2> 
             <br />
             <div className="perfil-info">
                 <img

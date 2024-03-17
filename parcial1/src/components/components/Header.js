@@ -1,15 +1,13 @@
-// Header.js
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FormattedMessage } from 'react-intl'; // Importa FormattedMessage
-import './Header.css'; // Importa el archivo CSS para los estilos del header
+import { FormattedMessage } from 'react-intl'; 
+import './Header.css'; 
 
 function Header({ userData }) {
     const navigate = useNavigate();
 
-    // Handle click event
     const handleClick = () => {
-        // Redireccionar a la página de perfil
         navigate('/user'); 
     };
 

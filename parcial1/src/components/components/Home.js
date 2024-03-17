@@ -20,11 +20,9 @@ export default function Home(props) {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    // Aquí puedes realizar la solicitud para obtener los datos del usuario
     fetch('https://raw.githubusercontent.com/JuanSe2003/rrrrrrrrrrrrr/main/DatosUsuario.json')
         .then(response => response.json())
         .then(data => {
-            // Actualizar el estado con los datos del usuario
             setUserData(data[0]);
         })
         .catch(error => {
