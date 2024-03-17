@@ -1,0 +1,41 @@
+/* Header.css */
+.header-container {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Alinea verticalmente */
+    padding: 20px 0;
+    /* Añade espacio alrededor */
+}
+
+.profile-image {
+    border-radius: 50%;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Una columna para la imagen y otra para los detalles */
+    grid-gap: 10px;
+    /* Espacio entre las columnas */
+    align-items: center;
+    /* Alinea verticalmente */
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    margin: 0;
+    /* Elimina el margen */
+}
+
+.stats p {
+    margin: 5px 0;
+    /* Espacio entre las estadísticas */
+}

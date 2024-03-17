@@ -1,0 +1,15 @@
+{
+  "nombre": "Name:",
+  "apellido": "Last Name:",
+  "cantidad_post": "Number of Posts:",
+  "cantidad_seguidores": "Number of Followers:",
+  "titulo": "Post Details",
+  "cerrar": "Close",
+  "descripcion":"Descriptionn",
+  "username":"UserName",
+  "first_name":"First Name",
+  "last_name":"Last Name",
+  "image":"Image",
+  "cantidad_seg":"Number of Followers",
+  "url":"URL"
+}

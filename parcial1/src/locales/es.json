@@ -1,0 +1,15 @@
+{
+  "nombre": "Nombre:",
+  "apellido": "Apellido:",
+  "cantidad_post": "Cantidad de Publicaciones:",
+  "cantidad_seguidores": "Cantidad de Seguidores:",
+  "titulo": "Detalles de la Publicación",
+  "cerrar": "Cerrar",
+  "Descripcion":"Descripcion",
+  "username":"Nombre de Usuario",
+  "first_name":"Primer nombre",
+  "last_name":"Apellido",
+  "image":"Imagen",
+  "cantidad_seg":"Cantidad de Seguidores",
+  "url":"URL"
+}
